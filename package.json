@@ -1,0 +1,22 @@
+{
+  "name": "tp7mercadoliebre",
+  "version": "1.0.0",
+  "description": "TP 7 - MercadoLiebre",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kucki90/tp7mercadoliebre.git"
+  },
+  "author": "Cecilia Noemi Kuckiewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kucki90/tp7mercadoliebre/issues"
+  },
+  "homepage": "https://github.com/kucki90/tp7mercadoliebre#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

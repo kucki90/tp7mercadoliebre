@@ -1,0 +1,25 @@
+/* paleta de colores */
+
+:root{
+    --color-amarillo : #eac926;
+    --color-azul : #03264C;
+    --color-Celeste: #1259c3;
+    --color-Grisoscuro: #666;
+    --color-Grisclaro: #ebebeb;
+    --color-Verde: #39b54a;
+}
+
+/* general // va a afectar a todo el documento */
+
+*{
+    font-family: 'Roboto', sans-serif; /* tipografía que se va a utilizar en el documento */
+    margin: 0; /* quita el margen externo que viene por defecto */
+    padding: 0; /* quita el margen interno que viene por defecto */
+}
+
+/* links */
+
+a{
+    text-decoration: none; /* quita subrayado */
+    color: black; /* da color negro a la tipografía */
+}

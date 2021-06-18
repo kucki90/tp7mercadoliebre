@@ -1,0 +1,156 @@
+/* header */
+
+body header{
+    padding-bottom: 8px; /* margen interno inferior del header */
+    background-color: var(--color-amarillo); /* color de fondo del header */
+}
+
+/* logo */
+
+body header img{
+    width: 40%; /* ancho de la imagen del logo */
+    padding: 15px 0 0 15px; /* margen interno izquierdo y superior */
+}
+
+/* barra de búsqueda */
+
+body header form{
+    font-size: 12px; /* tamaño del texto que va dentro de la barra de búsqueda */
+    padding: 10px 15px; /* margenes internos superior, laterales e inferior */
+}
+
+.compra{
+    font-size: 12px; /* tamaño del la frase "compra" */
+    text-align: center; /* alinea el texto en el centro */
+    padding-bottom: 10px; /* margen interno inferior */
+}
+
+/* categorías/usuario */
+
+li{
+    list-style: none; /* quita decoración de la lista */
+}
+
+ul{
+    font-size: 12px; /* tamaño de la tipografía de las listas */
+    padding: 10px 0; /* margen interno superior e inferior */
+}
+
+/* burger */
+
+.burger-menu{
+    margin:15px auto 15px; /* margen externo superior, laterales e inferior */
+    color: var(--color-Grisclaro); /* color del ícono */
+    background-color: var(--color-Celeste); /* color del fondo del ícono */
+    display: flex; /* hace flexible a la "caja" */
+    justify-content: center; /* centra al ícono verticalmente */
+    align-items: center;  /* centra al ícono horizontalmente */
+    width: 35px; /* ancho */
+    height: 35px; /* altura */
+    border-radius: 4px; /* redondeo de las esquinas de la caja del ícono */
+    font-size: 18px; /* tamaño del ícono */
+}
+
+/* main */
+
+main{
+    background-color: var(--color-Grisclaro);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* titulares */
+
+main h3{
+    font-size: 24px;
+    text-align: left;
+    margin: 0px 5%;
+}
+
+/* fotos articulos */
+
+section article img{
+    margin: 0 10px; 
+    width: 90%;
+    align-items: center;
+}
+
+/* texto debajo de fotos */
+
+section article div{
+    background-color: white;
+    margin: 0 5% 10px;
+    padding: 15px;
+    border-top: solid 1px #ebebeb;
+    text-align: left;
+}
+
+article .fa-truck{
+    color: var(--color-Verde);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    border-color: var(--color-Verde);
+    border-radius: 50%;
+    text-align: center;
+    padding: 4px;
+}
+/* precio */
+
+article .precio{
+    font-size: 18px;
+}
+
+/* descuento/descripción */
+
+article .descuento{
+    color: var(--color-Verde);
+    font-size: 16px;
+
+}
+
+article .descripcion{
+    font-size: 16px;
+}
+
+/* footer */
+
+footer{
+    background-color: white; /* color de fondo del footer */
+    color: var(--color-Grisoscuro); /* color del texto del footer */
+}
+
+footer section article{
+    text-align: center; /* alinea en el centro el texto */
+}
+
+/* íconos del footer */
+
+footer i{
+    font-size: 2em; /* tamaño de los íconos */
+    margin-top: 60px; /* margen externo superior */
+    margin-bottom: 10px; /* margen externo inferior */
+    color: var(--color-Celeste); /* color de loa íconos */
+}
+
+/* texto del footer */
+
+footer section article p, footer section article h3{
+    padding: 0 35px; /* margenes internos laterales */
+}
+
+footer section article h3{
+    font-size: 16px; /* tamaño de los titulares del footer */
+}
+
+footer section article {
+    font-size: 12px; /* tamaño de los cuerpos de texto del footer */
+}
+
+/* copyright */
+
+.copyright{
+    padding: 0 0 20px 15px; /* margenes internos derecho e inferior del copyright */
+    margin-top: 40px; /* margen externo superior del copyright */
+    font-size: 12px; /* tamaño de la tipografìa del copyright */
+}
