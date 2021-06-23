@@ -8,7 +8,7 @@ body header{
 /* logo */
 
 body header img{
-    width: 40%; /* ancho de la imagen del logo */
+    width: 150px; /* ancho de la imagen del logo */
     padding: 15px 0 0 15px; /* margen interno izquierdo y superior */
 }
 
@@ -18,6 +18,8 @@ body header form{
     font-size: 12px; /* tamaño del texto que va dentro de la barra de búsqueda */
     padding: 10px 15px; /* margenes internos superior, laterales e inferior */
 }
+
+/* frase "compra en cuotas" */
 
 .compra{
     font-size: 12px; /* tamaño del la frase "compra" */
@@ -33,7 +35,7 @@ li{
 
 ul{
     font-size: 12px; /* tamaño de la tipografía de las listas */
-    padding: 10px 0; /* margen interno superior e inferior */
+    padding: 10px; /* margen interno superior e inferior */
 }
 
 /* burger */
@@ -54,63 +56,71 @@ ul{
 /* main */
 
 main{
-    background-color: var(--color-Grisclaro);
-    padding-bottom: 5px;
-    text-align: center;
+    background-color: var(--color-Grisclaro); /* color de fondo del main */
+    padding-bottom: 5px; /* margen interno inferior */
+    margin-left: auto; /* margen izquierdo automático */
+    margin-right: auto; /* margen derecho automático */
+    text-align: center; /* alinea al texto en el centro */
+    width: 90vw; /* ancho del main relacionado con el viewport */
 }
 
 /* titulares */
 
 main h3{
-    font-size: 24px;
-    text-align: left;
-    margin: 0px 5%;
+    font-family: 'Roboto', sans-serif; /* tipografía */
+    font-size: 24px; /* tamaño de la tipografía */
+    text-align: left; /* alineación del texto a la izquierda */
+    color: var(--color-Grisoscuro); /* color de la tipografía */
 }
 
-/* fotos articulos */
+/* article */
 
-section article img{
-    margin: 0 10px; 
-    width: 90%;
-    align-items: center;
+main article{
+    margin-bottom: 10px; /* margen inferior */
 }
 
 /* texto debajo de fotos */
 
+
 section article div{
-    background-color: white;
-    margin: 0 5% 10px;
-    padding: 15px;
-    border-top: solid 1px #ebebeb;
-    text-align: left;
+    width: 90vw; /* ancho del viewport */
+    background-color: white; /* color de fondo del texto que acompaña a los productos */
+    padding: 15px; /* margen interno */
+    border-top: solid 1px var(--color-Grisclaro); /* borde superior de la caja que aloja el texto que acompaña a los productos */
+    text-align: left; /* alinea al texto a la izquierda */
 }
 
+/* ícono camión */
+
 article .fa-truck{
-    color: var(--color-Verde);
-    border-style: solid;
-    border-width: 1px;
-    font-size: 16px;
-    border-color: var(--color-Verde);
-    border-radius: 50%;
-    text-align: center;
-    padding: 4px;
+    color: var(--color-Verde); /* color del ícono */
+    border: 1px solid var(--color-Verde); /* peso, tipo y color del borde */
+    width: min-content; /* la medida se ajusta al tamaño del ícono */
+    font-size: 1rem; /* tamaño del ícono */
+    border-radius: 50%; /* porcentaje para el redondeo del borde */
+    text-align: center; /* centrado del ícono */
+    padding: .5em; /* margen interno desde el borde hasta el ícono */
 }
 /* precio */
 
 article .precio{
-    font-size: 18px;
+    font-size: 18px; /* tamaño de la tipografía */
+    margin: 0; /* margenes externos */
 }
 
-/* descuento/descripción */
+/* descuento */
 
 article .descuento{
-    color: var(--color-Verde);
-    font-size: 16px;
-
+    color: var(--color-Verde); /* color de la tipografía */
+    font-size: 16px; /* tamaño de la tipografía */
+    margin: 0; /* margenes externos */
 }
 
+/* descripción */
+
 article .descripcion{
-    font-size: 16px;
+    font-size: 16px; /* tamaño de la tipografía */
+    color: var(--color-Grisoscuro); /* color de la tipografía */
 }
 
 /* footer */
@@ -153,4 +163,29 @@ footer section article {
     padding: 0 0 20px 15px; /* margenes internos derecho e inferior del copyright */
     margin-top: 40px; /* margen externo superior del copyright */
     font-size: 12px; /* tamaño de la tipografìa del copyright */
+    margin-bottom: 0px; 
+}
+
+@media (max-width: 360px){ /* hasta los 360px */
+
+    article .descripcion{
+        display: none; /* oculta la descripción de los artículos */
+    }
+
+/* barra de navegación */
+
+    .nav-mobile{
+        display: none; /* oculta la barra de navegación */
+    }
+}
+
+@media (min-width: 361px) { /* desde los 361px */
+
+    .burger-menu{
+        display: none; /* oculta el menú hamburguesa */
+    }
+
+    main article{
+        box-shadow: 0 0 10px rgb(100, 100, 100); /* sobra de los articles */
+    }
 }

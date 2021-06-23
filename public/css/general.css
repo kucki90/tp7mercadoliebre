@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 /* paleta de colores */
 
 :root{
@@ -13,13 +16,28 @@
 
 *{
     font-family: 'Roboto', sans-serif; /* tipografía que se va a utilizar en el documento */
-    margin: 0; /* quita el margen externo que viene por defecto */
-    padding: 0; /* quita el margen interno que viene por defecto */
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 16px; /* tamaño de la tipografía */
+    font-family: sans-serif; /* tipografía */
+}
+
+body{
+    margin: 0; /* margen externo */
+    background-color: var(--color-Grisclaro); /* color de fondo del body */
+}
+
+img{
+    display: block; /*  */
+    width: 100%; /* ancho al 100% */
+    height: auto; /* el alto se va a ajustar dependiendo del ancho de la foto */
 }
 
 /* links */
 
-a{
-    text-decoration: none; /* quita subrayado */
-    color: black; /* da color negro a la tipografía */
+nav a{
+    text-decoration: inherit; /* hereda la decoración */
+    color: inherit; /* hereda el color */
 }
